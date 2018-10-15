@@ -27,26 +27,30 @@ int main ()
 using namespace std;
 #include <cmath>
 void func(int A, int B, int C){
-if(A != 0){
+if(A != 0)
+{
  int Dis = pow(B,2) - 4 * A * C;
-if(Dis>0){
+if(Dis>0)
+{
  double x1 = ((-B)-pow(Dis,1.0/2.0))/(A*2);
  double x2 = ((-B)+pow(Dis,1.0/2.0))/(A*2);
 if (x1<x2)
- {cout << "x1-min:= " << x1;}
-else{cout << "x2-min:= " <<  x2;}
-}else{cout <<"Discriminant uravnenia otrizhacelen";} 
-}else{cout << "A:= 0";}}
+{
+ cout << "x1-min:= " << x1;
+ }else
+{
+  cout << "x2-min:= " <<  x2;
+}
+ }else
+{
+ cout <<"Discriminant uravnenia otrizhacelen";} 
+ }else
+{
+  cout << "A:= 0";}}
 int main(){
-int A;
-cout <<"vvedite A:= ";
-cin>>A;
-int B;
-cout <<"vvedite B:= ";
-cin>>B;
-int C;
-cout <<"vvedite C:= ";
-cin>>C;
+int A,B,C;
+cout <<"vvedite A,B,C:= ";
+cin>>A,B,C;
 func(A,B,C);
 return 0;
 }
